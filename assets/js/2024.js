@@ -16,7 +16,7 @@ const rejectMessages = [
     </div>
     <div class="flex flex-col">
       <p class="pt-2">Nếu bạn đã nhất quyết từ chối như vậy!</p>
-      <p class="pt-2">Vậy lì xì lại cho chúng tôi nhé =))</p>
+      <p class="pt-2">Vậy lì xì lại cho tôi nhé =))</p>
     </div>
   </div>`,
 ];
@@ -39,7 +39,6 @@ function fireworksConfetti() {
 
     const particleCount = 50 * (timeLeft / duration);
 
-    // since particles fall down, start a bit higher than random
     confetti(
       Object.assign({}, defaults, {
         particleCount,
